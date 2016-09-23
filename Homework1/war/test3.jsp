@@ -53,8 +53,16 @@
 	</div>
   </header>
   <body style="margin: 0;">
-  <div class="content">
-
+  <div class="content"  style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left; word-wrap: break-word;">
+<%     if (user != null) {
+%>
+	<a class="button" href="/test2.jsp">Make a new post</a>
+	<br>
+	<br>
+<%
+}
+%>
 <%
 
     // Run an ancestor query to ensure we see the most up-to-date
@@ -106,6 +114,10 @@
 <%
 }
 %>
+</div>
+  <div style="margin-left: 680px;"> 
+  	<img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
+  </div>
     </div>
   </body>
 
