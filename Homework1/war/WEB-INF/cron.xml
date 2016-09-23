@@ -5,6 +5,6 @@
     <url>/cron/cronjob</url>
     <target>beta</target>
     <description>daily summary job</description>
-    <schedule>every 2 minutes</schedule>
+    <schedule>every 5 minutes</schedule>
   </cron>
 </cronentries>

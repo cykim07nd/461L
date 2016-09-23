@@ -22,21 +22,19 @@ import javax.servlet.http.HttpServletResponse;
  
 
 @SuppressWarnings("serial")
-public class CronServlet extends HttpServlet {
+public class testServlet extends HttpServlet {
 	
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
         Properties props = new Properties();
-        Session session = Session.getDefaultInstance(props, null);
-
-      
+        Session session = Session.getDefaultInstance(props, null);    
         try{
         	Message emailMessage = new MimeMessage(session);
         	emailMessage.setFrom( new InternetAddress("chanyoung.kim95@gmail.com", "Chan-Young Kim"));
-        	emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("cykim07nd@gmail.com", "Young") );
-        	emailMessage.setSubject("Pelase Work");
-        	emailMessage.setText("still work?");
+        	emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("cykim07nd@yahoo.com", "Young") );
+        	emailMessage.setSubject("emila jklfd");
+        	emailMessage.setText("this is working");
         	Transport.send(emailMessage);
         	resp.sendRedirect("/test.jsp");
         } catch (AddressException e){
@@ -58,8 +56,8 @@ public class CronServlet extends HttpServlet {
         try{
         	Message emailMessage = new MimeMessage(session);
         	emailMessage.setFrom( new InternetAddress("chanyoung.kim95@gmail.com", "Chan-Young Kim"));
-        	emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("cykim07nd@gmail.com", "Young") );
-        	emailMessage.setSubject("it works? please.");
+        	emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("cykim07nd@yahoo.com", "Young") );
+        	emailMessage.setSubject("emila jklfd");
         	emailMessage.setText("fdjklsdjfieoj");
         	Transport.send(emailMessage);
         	resp.sendRedirect("/test.jsp");

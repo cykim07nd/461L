@@ -114,6 +114,10 @@
 </div>
   <div style="margin-left: 680px;"> 
   	<img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
+   <form action="/test" method="post">
+      <div><input type="submit" value="Post" /></div>
+    </form>
+  
   </div>
     </div>
   </body>
