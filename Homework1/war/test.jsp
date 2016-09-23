@@ -4,6 +4,7 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="homework1.Post" %>
+<%@ page import="homework1.Email" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
 <%@ page import="com.google.appengine.api.users.UserServiceFactory" %>
 <%@ page import="com.googlecode.objectify.*" %>
@@ -69,7 +70,9 @@
     // view of the Greetings belonging to the selected Guestbook.
     
 	ObjectifyService.register(Post.class);
-
+	ObjectifyService.register(Email.class);
+	List<Email> emails = ObjectifyService.ofy().load().type(Email.class).list();
+	
 	List<Post> posts = ObjectifyService.ofy().load().type(Post.class).list();   
 	Collections.sort(posts); 
 
@@ -112,15 +115,20 @@
     }
 %>
 </div>
-  <div style="margin-left: 680px;"> 
-  	<img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
-   <form action="/test" method="post">
-      <div><input type="submit" value="Post" /></div>
-    </form>
-  
+	<div style="margin-left: 680px;"> 
+  		<form action="/test" method="post">
+  			<div>
+      			<input type="text" size="40" name="email" required>
+      			<br>
+      			<br>
+      			<input style="width:300px; height:30px;"  type="submit" value="Subscribe/Unsubscribe" />
+      		</div>
+      		<br>
+  	  	</form>
+  		<img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
+  	</div>
   </div>
-    </div>
-  </body>
+</body>
 
 </html>
 

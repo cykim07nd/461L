@@ -114,12 +114,20 @@
 <%
 }
 %>
-</div>
-  <div style="margin-left: 680px;"> 
-  	<img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
-  </div>
-    </div>
-  </body>
+	</div>
+	 	<div style="margin-left: 680px;"> 
+	  		<form action="/test" method="post">
+	  			<div>
+	      		<input type="text" size="40" name="email" required>
+	      		<br>
+	      		<br>
+	      		<input style="width:300px; height:30px;"  type="submit" value="Subscribe/Unsubscribe" /></div>
+	      	    <br>
+	  	    </form>
+	  	    <img src="http://4.bp.blogspot.com/-ab8C2VyeSus/VRDlwEjzBnI/AAAAAAAADQE/b78aKIZl0xU/s1600/programming_assignment_help.jpg">
+	    </div>
+	</div>
+</body>
 
 </html>
 

@@ -5,6 +5,7 @@
     <url>/cron/cronjob</url>
     <target>beta</target>
     <description>daily summary job</description>
-    <schedule>every 5 minutes</schedule>
+    <schedule>every day 17:00</schedule>
+    <timezone>America/Chicago</timezone>
   </cron>
 </cronentries>

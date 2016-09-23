@@ -83,3 +83,8 @@ input[type=submit] {
     font-size: 16px;
     opacity: 0.9;
 }
+
+input[type=text] {
+	font-family:"Times New Roman", Times, serif;  
+   font-size: 20px;
+}

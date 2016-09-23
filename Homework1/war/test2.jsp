@@ -61,7 +61,7 @@
        <div>
       	   <h4 style="margin:0">Title</h4>
       	   
-      	   <textarea name="title" rows="1" cols="120"  ></textarea>
+      	   <input type="text" size="115" name="title" required>
       </div>
        
        
